@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Manejo de Numeros</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+            html {font-family: sans-serif; text-align: center}
+            body {display: inline-block; text-align: left}
+            *:required, .obligatorio {border: thin solid blue}
+            form em {font-size: small}
+            output {font-weight: bold}
+            footer {font-size: small}
+  
+        </style>  
+    </head>
+    <body>
+        
+            <header>
+            <h1>Manejo De Números Con BigNumber y Numeral</h1>
+        </header>
+      
+        <p>Los valores y = 12 y x=0 calcule las siguientes operaciones</p>
+
+        <button onclick="myFunction1(),myFunction2(), myFunction3(),myFunction4()">Generar</button>
+        <input type="reset" value="Limpiar" accesskey="l">
+        
+         
+         
+         <p id="suma"></p>
+         <p id="resta"></p>
+         <p id="mult"></p>
+         <p id="div"></p>
+        <script>
+            function myFunction1() {
+                 var y = 12;
+                 var x = y + 0;
+                 var a = "Suma: "+x;
+             document.getElementById("suma").innerHTML = a;
+         }
+            function myFunction2() {
+                 var y = 12;
+                 var x = y - 0;
+                 var a = "Resta: "+x;
+             document.getElementById("resta").innerHTML = a;
+            }
+            function myFunction3() {
+                 var y = 12;
+                 var x = y * 0;
+                 var a = "Multiplicacion: "+x;
+             document.getElementById("mult").innerHTML = a;
+            }
+            function myFunction4() {
+                 var y = 12;
+                 var x = y / 0;
+                 var a = "Division: "+x;
+             document.getElementById("div").innerHTML = a;
+            }
+    
+        </script>
+           
+           <p></p>
+         
+    </body>
+</html>
